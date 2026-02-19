@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="render.css">
+
+        <link rel="icon" href="https://prayoadmii.neocities.org/Assets/CDN/minecraft/icon.png">
+        <title>Hangout Island Status</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MXGKTPLSR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3MXGKTPLSR');
+        </script>
+        <!-- Google tag (gtag.js) -->
+    </head>
+    
+    <body>
+        <audio id="bgm" autoplay loop>
+            <source src="https://lambda.vgmtreasurechest.com/soundtracks/minecraft/muokkuup/2-10.%20Haunt%20Muskie.mp3">
+        </audio>
+        <script src="https://prayoadmii.neocities.org/Assets/Scripts/background-music.js"></script>
+
+        <div class="background-div-box">
+            <h1>Hangout Island Server Status</h1>
+            <p><i>Server Status Provide By <a href="https://mcstatus.io/" style="color: aqua;" target="_blank">mcstatus.io</a></i></p>
+
+            <div class="status-card">
+                <h2 style="text-align: center;">Java Server</h2>
+                <p>IP: membership-celebs.gl.joinmc.link</p>
+
+                <div class="status-row">
+                    <div id="java-status-box" class="status-label stat-notloaded">
+                        <p id="java-status-label">Not Loaded</p>
+                    </div>
+
+                    <p id="java-player-count" class="status-players-label">-/-</p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="status-card">
+                <h2 style="text-align: center;">Bugrock Server</h2>
+                <p>IP: community-unusable.gl.at.ply.gg | Port: 12836</p>
+                
+                <div class="status-row">
+                    <div id="bedrock-status-box" class="status-label stat-notloaded">
+                        <p id="bedrock-status-label">Not Loaded</p>
+                    </div>
+
+                    <p id="bedrock-player-count" class="status-players-label">-/-</p>
+                </div>
+            </div>
+
+            <br>
+
+            <p id="refresh-counter">Will Refresh In: --s</p>
+        </div>
+
+        <script src="render.js"></script>
+    </body>
+</html>

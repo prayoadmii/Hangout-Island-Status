@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+    font-family: 'Fredoka One', cursive;
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('https://prayoadmii.neocities.org/Assets/images/mc-hang-isl-bk.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.background-div-box {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(33, 34, 39, 0.8);
+    border-radius: 12px;
+    color: white;
+}
+
+.status-card {
+    backdrop-filter: blur(8px);
+    padding: 10px;
+    background-color: rgba(33, 34, 39, 0.8);
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+.status-label {
+    display: inline-block;
+    padding: 0px 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.stat-online {
+    background-color: limegreen;
+    color: black;
+    box-shadow: 0 0 10px limegreen;
+}
+
+.stat-offline {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+}
+
+.stat-notloaded {
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 10px orange;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-players-label {
+    font-size: 25px;
+    margin: 0;
+}
